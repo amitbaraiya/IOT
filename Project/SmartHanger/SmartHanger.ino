@@ -1,25 +1,23 @@
-
 #include <WiFi.h>
 #include <HTTPClient.h>
 #include <WiFiManager.h>
-
 #define connection "Network Connection Setup"
 //const char* ssid = "ABCkkkkk";
 //const char* password = "Amit123@";
+
 const char *macAdd = "f0:08:d1:db:53:4c";
-
 const char *serverName = "http://testqaweb.com/smartHanger/api/Auth/updateHangerDetails";
-
 const int ledGreen = 18;
 const int ledRed = 19;
 const int batteryPin = 33;
-int TRIGGER_PIN = 2;
 
+int TRIGGER_PIN = 2;
 int occupied = 0;
 int ADC = 0;
 int voltage = 0;
 int state;
 float percentage = 0;
+
 String deviceId = "SH-f0:08:d1:db:53:4c";
 
 WiFiManager wifiManager;
