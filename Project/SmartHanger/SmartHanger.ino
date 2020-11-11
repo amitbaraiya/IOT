@@ -98,6 +98,7 @@ void batterySetup()
   Serial.print("percent=");
   Serial.print(percentage);
   Serial.println(" ");
+  
   delay(1000);
 }
 void loop()
